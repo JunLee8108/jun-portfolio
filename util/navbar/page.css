@@ -1,0 +1,124 @@
+.navbar-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+}
+
+.navbar-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  z-index: 15;
+  transition: width 0.5s ease-out; /* Added transition */
+}
+
+.navbar-container:hover {
+  width: 200px; /* Added hover effect to increase width */
+}
+
+.navbar-menu-icon {
+  color: white;
+  visibility: visible;
+  opacity: 1;
+  max-height: unset;
+  transition: all 0.3s ease-out; /* Transition added for smooth hiding */
+}
+
+.navbar-sidebar-container {
+  width: 200px;
+  height: 100%;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  flex-direction: column;
+}
+
+.navbar-sidebar-top {
+  height: 50%;
+  text-align: center;
+  border-bottom: 2px dotted white;
+}
+
+.navbar-sidebar-name {
+  color: white;
+  width: 80%;
+  padding: 5px;
+  border-left: 2px dotted white;
+  border-right: 2px dotted white;
+}
+
+.navbar-sidebar-intro {
+  color: white;
+  font-size: 13px;
+  width: 70%;
+  text-align: left;
+  line-height: 25px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid white;
+}
+
+.navbar-sidebar-brand-icon {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  padding-left: 5.5px;
+  padding-right: 5.5px;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-sidebar-brand-icon:hover {
+  color: white;
+  background-color: black;
+}
+
+.navbar-sidebar-content {
+  padding: 0;
+  height: 50%;
+  flex-direction: column;
+}
+
+.navbar-sidebar-list {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: black;
+}
+
+.navbar-container:hover .navbar-menu-icon {
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+
+.navbar-container:hover .navbar-sidebar-container {
+  visibility: visible;
+  max-height: unset;
+  opacity: 1;
+}

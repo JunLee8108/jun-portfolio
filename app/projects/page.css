@@ -1,0 +1,18 @@
+.projects-container {
+  flex-direction: column;
+}
+
+.projects-grid-container {
+  /* display: grid; */
+  width: 100%;
+  /* grid-template-columns: repeat(auto-fit, minmax(100%, 100%));
+  grid-gap: 3.5rem 4rem;
+  justify-content: center;
+  align-items: center; */
+  max-width: 800px;
+  background-color: blue;
+}
+
+.projects-grid-container h1 {
+  background-color: red;
+}
