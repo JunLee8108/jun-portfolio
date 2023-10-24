@@ -8,6 +8,7 @@ import nextJS from "@/public/tech-stack/nextjs.webp";
 import nodeJS from "@/public/tech-stack/nodejs.webp";
 
 import VocaVista from "@/public/project/pg1.webp";
+import Refined from "@/public/project/pg2.webp";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,7 +22,16 @@ const projectList = [
     id: 0,
     name: "VocaVista",
     img: VocaVista,
-    content: [{}],
+    content: [
+      "Korean E-Learning Platform with Adaptive Learning",
+      "Tech stack: Next.js, TypeScript, and MongoDB",
+    ],
+  },
+  {
+    id: 0,
+    name: "Refined Seoul",
+    img: Refined,
+    content: ["Fictional luxury fashion brand"],
   },
 ];
 
@@ -29,12 +39,12 @@ const navbarMenu = [
   {
     id: 0,
     name: "About Me",
-    icon: <FontAwesomeIcon icon={faUser} style={{ marginRight: "5px" }} />,
+    icon: <FontAwesomeIcon icon={faUser} style={{ marginRight: "10px" }} />,
   },
   {
     id: 1,
     name: "Projects",
-    icon: <FontAwesomeIcon icon={faFile} style={{ marginRight: "5px" }} />,
+    icon: <FontAwesomeIcon icon={faFile} style={{ marginRight: "10px" }} />,
   },
   {
     id: 2,
@@ -42,7 +52,7 @@ const navbarMenu = [
     icon: (
       <FontAwesomeIcon
         icon={faMobileScreenButton}
-        style={{ marginRight: "5px" }}
+        style={{ marginRight: "10px" }}
       />
     ),
   },
@@ -317,4 +327,4 @@ const techStackData = [
   },
 ];
 
-export { navbarMenu, techStackData };
+export { navbarMenu, techStackData, projectList };

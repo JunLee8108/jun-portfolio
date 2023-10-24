@@ -18,11 +18,11 @@
   height: 100%;
   background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
   z-index: 15;
-  transition: width 0.5s ease-out; /* Added transition */
+  transition: width 0.5s ease-out;
 }
 
 .navbar-container:hover {
-  width: 200px; /* Added hover effect to increase width */
+  width: 250px; /* Added hover effect to increase width */
 }
 
 .navbar-menu-icon {
@@ -30,7 +30,7 @@
   visibility: visible;
   opacity: 1;
   max-height: unset;
-  transition: all 0.3s ease-out; /* Transition added for smooth hiding */
+  transition: all 0.8s ease-out;
 }
 
 .navbar-sidebar-container {
@@ -99,6 +99,11 @@
   font-weight: 400;
   cursor: pointer;
   list-style-type: none;
+  transition: 0.3s ease transform;
+}
+
+.navbar-sidebar-list:hover {
+  transform: scale(1.1);
 }
 
 .navbar-link {
